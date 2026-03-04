@@ -1,0 +1,6 @@
+numpy>=1.22
+matplotlib>=3.6
+astropy>=5.2
+astroquery>=0.4.6
+PyAstronomy>=0.19
+scipy>=1.8
