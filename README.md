@@ -1,6 +1,6 @@
 <p align="center">
   <!-- change width value to resize logo -->
-  <img src="fast_rv_logo_transparent.png" alt="FAST-RV logo" width="620">
+  <img src="fast_rv_logo_transparent.png" alt="FAST-RV logo" width="420">
 </p>
 
 # FAST-RV
