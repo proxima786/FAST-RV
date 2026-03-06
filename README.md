@@ -28,13 +28,13 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/proxima786/FAST-RV.git
 cd FAST-RV
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ## Usage
 ```bash
 
-import fast_rv
+import fast_rv as frv
 ```
 
 Example analysis is available in:
