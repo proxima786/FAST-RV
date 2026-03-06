@@ -4,98 +4,55 @@
 </p>
 
 # FAST-RV
+
 [![CI](https://github.com/proxima786/FAST-RV/actions/workflows/ci.yml/badge.svg)](https://github.com/proxima786/FAST-RV/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 
-**F**irst-order **A**utomated **S**ingle-planet **T**ool for **R**adial **V**elocities) is a tiny, no-drama toolkit to grab **radial-velocity (RV) time series from VizieR** and fit a **simple Keplerian model — fast**.
+**FAST-RV** (First-order Automated Single-planet Tool for Radial Velocities) is a lightweight Python toolkit for quickly analyzing exoplanet radial velocity data from VizieR catalogs.
 
-No MCMC.  
-No Bayesian rabbit holes.  
-Just a clean first order look at your Radial velocity data !
+It performs fast first-order Keplerian fitting and produces phase-folded radial velocity curves without going to any complexities of Bayesian inference / MCMC . 
 
-Includes a classic demo of deriving the famous RV curve of "51 Pegasi b" (the first discovered exolpanet)
+## Features
 
----
+- Fetch radial velocity time series from VizieR
+- Estimate orbital period
+- Fit a simple single-planet Keplerian model
+- Generate phase-folded RV plots
+- Example workflow for **51 Pegasi b**
 
-# What FAST-RV assumes
+## Installation
 
-This package is intentionally **first-order** and works best when:
-
-- The system contains **a single planet**
-- The RV data comes from **a single instrument**
-- The VizieR table follows a simple format where the **first three columns are**
-
-```
-time (days) | RV | RV error
-```
-
-(RV and error are often reported in **km/s or m/s**.)
-
-If your table contains an `Inst` column (multiple instruments), simply **filter the data to one instrument** before running the fit.
-
----
-
-# Where the data comes from
-
-FAST-RV expects a **VizieR catalog ID**, which can be queried easily in Python  
-(see the **51 Peg example notebook**).
-
-The fitting routine is inspired by the **PyAstronomy KeplerRVModel** implementation.
-
-You can estimate the orbital period using a **Lomb–Scargle periodogram**, but for best results it is recommended to use approximate parameters (period, eccentricity, etc.) from the **NASA Exoplanet Archive**.
-
-### Useful links
-
-VizieR catalog portal (CDS)  
-https://vizier.cds.unistra.fr/
-
-PyAstronomy KeplerRVModel  
-https://pyastronomy.readthedocs.io/
-
-NASA Exoplanet Archive  
-https://exoplanetarchive.ipac.caltech.edu/
-
----
-
-# Usage
-
-### 1. Clone the repository
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/proxima786/FAST-RV.git
+cd FAST-RV
 pip install -r requirements.txt
-pip install fast-rv
 ```
 
-### 2. Open the example notebook
+## Usage
+```bash
 
+import fast_rv
 ```
-51_peg.ipynb
+
+Example analysis is available in:
+```bash
+
+examples/51_peg.ipynb
 ```
 
-### 3. Choose a VizieR catalog
+## FAST-RV currently assumes:
 
-Change the `catalog_id` to any RV catalog you like.  
-(Some example IDs are already provided in the notebook if you feel lazy.)
+- single-planet systems  
+- a single instrument  
+- standard VizieR RV tables (time, RV, RV error)
 
-### 4. Run the notebook
+## License
 
-The code will:
+MIT License. See `LICENSE` for details.
 
-- load the RV time series  
-- estimate the period  
-- fit a Keplerian model  
-- produce a **phase-folded RV curve**
+## Author
 
-### 5. Ta-da!
-
-You now have your **own radial velocity orbit**.
-
----
-
-# Contact
-
-If you have questions, suggestions, or ideas for improvements:
-
-📧 **jebraanjamil@gmail.com**
+Jebraan Mudholkar
