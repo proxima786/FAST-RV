@@ -5,8 +5,8 @@
 
 # FAST-RV
 [![CI](https://github.com/proxima786/FAST-RV/actions/workflows/ci.yml/badge.svg)](https://github.com/proxima786/FAST-RV/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 
 **F**irst-order **A**utomated **S**ingle-planet **T**ool for **R**adial **V**elocities) is a tiny, no-drama toolkit to grab **radial-velocity (RV) time series from VizieR** and fit a **simple Keplerian model — fast**.
 
