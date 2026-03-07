@@ -5,6 +5,7 @@
 
 # FAST-RV
 
+[![PyPI version](https://img.shields.io/pypi/v/fast-rv.svg)](https://pypi.org/project/fast-rv/)
 [![CI](https://github.com/proxima786/FAST-RV/actions/workflows/ci.yml/badge.svg)](https://github.com/proxima786/FAST-RV/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
