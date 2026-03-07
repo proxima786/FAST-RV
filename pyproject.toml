@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-  { name = "Jebraan Jamil", email = "jebraanjamil@gmail.com" }
+  { name = "Jebraan Mudholkar", email = "jebraanjamil@gmail.com" }
 ]
 keywords = ["astronomy", "exoplanets", "radial-velocity", "keplerian-fit", "vizier"]
 classifiers = [
