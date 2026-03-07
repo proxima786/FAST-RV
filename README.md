@@ -1,6 +1,5 @@
 <p align="center">
-  <!-- change width value to resize logo -->
-  <img src="fast_rv_logo_transparent.png" alt="FAST-RV logo" width="420">
+  <img src="https://raw.githubusercontent.com/proxima786/FAST-RV/master/fast_rv_logo_transparent.png" alt="FAST-RV logo" width="420">
 </p>
 
 # FAST-RV
